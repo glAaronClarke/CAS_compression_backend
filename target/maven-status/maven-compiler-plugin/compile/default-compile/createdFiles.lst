@@ -1,6 +1,0 @@
-com/example/ffmpegcompressor/dto/CompressionResponse$Builder.class
-com/example/ffmpegcompressor/dto/CompressionResponse.class
-com/example/ffmpegcompressor/FfmpegCompressorApplication.class
-com/example/ffmpegcompressor/config/FileUploadConfig.class
-com/example/ffmpegcompressor/controller/VideoCompressionController.class
-com/example/ffmpegcompressor/service/FFmpegService.class

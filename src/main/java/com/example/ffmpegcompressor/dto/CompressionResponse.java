@@ -12,13 +12,9 @@ public class CompressionResponse {
     private String outputPath;
     private String fileType;
 
-    // Default constructor
-    public CompressionResponse() {}
-
-    // Constructor
     public CompressionResponse(boolean success, String originalFileName, String compressedFileName,
-                             long originalSize, long compressedSize, double compressionRatio,
-                             double spaceSavedPercentage, long processingTimeMs, String outputPath, String fileType) {
+                               long originalSize, long compressedSize, double compressionRatio,
+                               double spaceSavedPercentage, long processingTimeMs, String outputPath, String fileType) {
         this.success = success;
         this.originalFileName = originalFileName;
         this.compressedFileName = compressedFileName;
@@ -30,8 +26,6 @@ public class CompressionResponse {
         this.outputPath = outputPath;
         this.fileType = fileType;
     }
-
-    // Builder pattern
     public static Builder builder() {
         return new Builder();
     }
@@ -120,54 +114,6 @@ public class CompressionResponse {
 
     public void setOriginalFileName(String originalFileName) {
         this.originalFileName = originalFileName;
-    }
-
-    public String getCompressedFileName() {
-        return compressedFileName;
-    }
-
-    public void setCompressedFileName(String compressedFileName) {
-        this.compressedFileName = compressedFileName;
-    }
-
-    public long getOriginalSize() {
-        return originalSize;
-    }
-
-    public void setOriginalSize(long originalSize) {
-        this.originalSize = originalSize;
-    }
-
-    public long getCompressedSize() {
-        return compressedSize;
-    }
-
-    public void setCompressedSize(long compressedSize) {
-        this.compressedSize = compressedSize;
-    }
-
-    public double getCompressionRatio() {
-        return compressionRatio;
-    }
-
-    public void setCompressionRatio(double compressionRatio) {
-        this.compressionRatio = compressionRatio;
-    }
-
-    public double getSpaceSavedPercentage() {
-        return spaceSavedPercentage;
-    }
-
-    public void setSpaceSavedPercentage(double spaceSavedPercentage) {
-        this.spaceSavedPercentage = spaceSavedPercentage;
-    }
-
-    public long getProcessingTimeMs() {
-        return processingTimeMs;
-    }
-
-    public void setProcessingTimeMs(long processingTimeMs) {
-        this.processingTimeMs = processingTimeMs;
     }
 
     public String getOutputPath() {
